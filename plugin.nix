@@ -120,26 +120,33 @@
   #     };
   #   };
   # };
-  efmls-configs = {
-    enable = true;
-    setup = {
-      haskell.formatter = "fourmolu";
-      nix.formatter = "nixfmt";
-    };
+  # efmls-configs = {
+  #   enable = true;
+  #   setup = {
+  #     haskell.formatter = "fourmolu";
+  #     nix.formatter = "nixfmt";
+  #   };
 
-  };
+  # };
+  nvim-cmp.enable = true;
   lsp-lines = {
     enable = true;
     currentLine = true;
   };
-  lsp-format.enable = true;
+  lsp-format = {
+    enable = true;
+    setup = {
+      hls.exclude = ["hls"];
+    };
+  };
   lspkind.enable = true;
   lspkind.cmp.enable = true;
   lspsaga.enable = true;
   lspsaga.lightbulb.enable = false;
   fidget.enable = true;
-  wilder = {
-    enable = true;
-    modes = [ ":" "/" "?" ];
-  };
+  # wilder = {
+  #   enable = true;
+  #   modes = [ ":" "/" "?" ];
+  # };
+
 }
