@@ -77,7 +77,7 @@
   }
   {
     type = "text";
-    val = "Nixvim NeoVim Nix Flake";
+    val = "Nixvim NeoVim Nix Flake v2";
     opts = {
       position = "center";
       hl = "Keyword";

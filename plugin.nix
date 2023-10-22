@@ -96,9 +96,17 @@
       hls = {
         enable = true;
         installLanguageServer = false;
+        cmd = [
+          "haskell-language-server"
+          "--lsp"
+        ];
         extraOptions = {
-          hlintOn = true;
-          formattingProvider = "fourmolu";
+          settings = {
+            haskell = {
+              hlintOn = true;
+              formattingProvider = "fourmolu";
+            };
+          };
         };
       };
       nixd.enable = true;
@@ -114,31 +122,11 @@
       };
     };
   };
-  # null-ls = {
-  #   enable = true;
-  #   sources = {
-  #     formatting = {
-  #       nixfmt.enable = true;
-  #       fourmolu.enable = true;
-  #       black.enable = true;
-  #       rustfmt.enable = true;
-  #       prettier.enable = true;
-  #       nixpkgs_fmt.enable = true;
-  #     };
-  #   };
-  # };
-  # efmls-configs = {
-  #   enable = true;
-  #   setup = {
-  #     haskell.formatter = "fourmolu";
-  #     nix.formatter = "nixfmt";
-  #   };
 
-  # };
   nvim-cmp.enable = true;
   lsp-lines = {
     enable = true;
-    currentLine = true;
+    currentline = true;
   };
   lsp-format = {
     enable = true;
@@ -148,9 +136,4 @@
   lspsaga.enable = true;
   lspsaga.lightbulb.enable = false;
   fidget.enable = true;
-  # wilder = {
-  #   enable = true;
-  #   modes = [ ":" "/" "?" ];
-  # };
-
 }
