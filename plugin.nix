@@ -126,7 +126,6 @@
   nvim-cmp.enable = true;
   lsp-lines = {
     enable = true;
-    currentline = true;
   };
   lsp-format = {
     enable = true;
