@@ -93,7 +93,14 @@
       # rnix-lsp.enable = true;
       # lua-ls.enable = true;
       # html.enable = true;
-      hls.enable = true;
+      hls = {
+        enable = true;
+        installLanguageServer = false;
+        extraOptions = {
+          hlintOn = true;
+          formattingProvider = "fourmolu";
+        };
+      };
       nixd.enable = true;
     };
     keymaps.lspBuf = {
@@ -135,9 +142,6 @@
   };
   lsp-format = {
     enable = true;
-    setup = {
-      hls.exclude = ["hls"];
-    };
   };
   lspkind.enable = true;
   lspkind.cmp.enable = true;
