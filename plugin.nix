@@ -53,10 +53,10 @@
       #   action = "git_files";
       #   desc = "Telescope Git Files";
       # };
-      "<leader>/" = "live_grep";
+      # "<leader>/" = "live_grep";
       "<leader>f" = "find_files";
-      "<leader>m" = "man_pages";
-      "gr" = "lsp_references";
+      # "<leader>m" = "man_pages";
+      # "gr" = "lsp_references";
     };
   };
 
@@ -69,7 +69,7 @@
 
   # markdown related
   markdown-preview.enable = true;
-  mkdnflow.enable = true;
+  # mkdnflow.enable = true;
 
   # nix.enable = true;
 
