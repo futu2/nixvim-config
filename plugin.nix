@@ -4,10 +4,10 @@
     enable = true;
     globalstatus = true;
   };
-  alpha = {
-    enable = true;
-    layout = import ./alpha.nix;
-  };
+  # alpha = {
+  #   enable = true;
+  #   layout = import ./alpha.nix;
+  # };
   # bufferline.enable = true;
   # barbecue.enable = true;
   chadtree.enable = true;
@@ -95,7 +95,7 @@
       # html.enable = true;
       hls = {
         enable = true;
-        installLanguageServer = false;
+        package = null;
         cmd = [
           "haskell-language-server"
           "--lsp"
