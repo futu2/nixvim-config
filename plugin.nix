@@ -110,6 +110,7 @@
         };
       };
       nixd.enable = true;
+      typst-lsp.enable = true;
     };
     keymaps.lspBuf = {
       "gd" = "definition";

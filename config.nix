@@ -10,5 +10,6 @@
     shiftwidth = 2;
     expandtab = true;
   };
+  filetype.extension.typ = "typst";
   plugins = import ./plugin.nix;
 }
