@@ -52,25 +52,25 @@
       hl = "Type";
     };
   }
-  {
-    type = "padding";
-    val = 2;
-  }
-  {
-    type = "group";
-    val = [
-      {
-        shortcut = "e";
-        desc = "  New file";
-        command = "<CMD>ene <CR>";
-      }
-      {
-        shortcut = "SPC q";
-        desc = "  Quit Neovim";
-        command = ":qa<CR>";
-      }
-    ];
-  }
+  # {
+  #   type = "padding";
+  #   val = 2;
+  # }
+  # {
+  #   type = "group";
+  #   val = [
+  #     {
+  #       shortcut = "e";
+  #       desc = "  New file";
+  #       command = "<CMD>ene <CR>";
+  #     }
+  #     {
+  #       shortcut = "SPC q";
+  #       desc = "  Quit Neovim";
+  #       command = ":qa<CR>";
+  #     }
+  #   ];
+  # }
   {
     type = "padding";
     val = 2;

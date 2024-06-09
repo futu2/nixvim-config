@@ -12,7 +12,8 @@
     inputs:
     inputs.flake-utils.lib.eachDefaultSystem (system:
     let
-      config = import ./config.nix;
+      pkgs = import inputs.nixpkgs { inherit system; };
+      config = import ./config.nix { inherit pkgs; };
       nixvim' = inputs.nixvim.legacyPackages."${system}";
       nvim = nixvim'.makeNixvim config;
     in

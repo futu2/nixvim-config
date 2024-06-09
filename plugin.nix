@@ -4,28 +4,29 @@
     enable = true;
     globalstatus = true;
   };
-  # alpha = {
-  #   enable = true;
-  #   layout = import ./alpha.nix;
-  # };
+
+  alpha = {
+    enable = true;
+    layout = import ./alpha.nix;
+  };
   # bufferline.enable = true;
   # barbecue.enable = true;
   chadtree.enable = true;
   indent-blankline.enable = true;
   cursorline.enable = true;
   noice.enable = true;
-  notify.enable = true;
+  # notify.enable = true;
   nvim-colorizer.enable = true;
-  specs =
-    {
-      enable = true;
-      color = "yellow";
-      width = 15;
-    };
+  # specs =
+  #   {
+  #     enable = true;
+  #     color = "yellow";
+  #     width = 15;
+  #   };
 
 
   # basic function
-  comment-nvim.enable = true;
+  comment.enable = true;
   flash.enable = true;
   multicursors.enable = true;
   spider = {
@@ -41,10 +42,10 @@
   todo-comments.enable = true;
   toggleterm = {
     enable = true;
-    openMapping = "<C-t>";
+    # openMapping = "<C-t>";
   };
   trouble.enable = true;
-  # which-key.enable = true;
+  which-key.enable = true;
   # wilder.enable = true;
   telescope = {
     enable = true;
@@ -124,7 +125,7 @@
     };
   };
 
-  nvim-cmp.enable = true;
+  # cmp.enable = true;
   lsp-lines = {
     enable = true;
   };
