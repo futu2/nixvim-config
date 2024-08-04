@@ -94,6 +94,16 @@
       # rnix-lsp.enable = true;
       # lua-ls.enable = true;
       # html.enable = true;
+      pylsp = {
+        enable = true;
+        settings = {
+          plugins = {
+            rope.enabled = true;
+            pylsp_mypy.enabled = true;
+            yapf.enabled = true;
+          };
+        };
+      };
       hls = {
         enable = true;
         package = null;

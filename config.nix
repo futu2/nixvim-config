@@ -6,6 +6,7 @@
   colorschemes.tokyonight.enable = true;
   opts = {
     number = true;
+    relativenumber = true;
     smartindent = true;
     tabstop = 2;
     shiftwidth = 2;
