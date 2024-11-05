@@ -1,8 +1,9 @@
 {
+  web-devicons.enable =true;
   # beauty
   lualine = {
     enable = true;
-    globalstatus = true;
+    settings.options.globalstatus = true;
   };
 
   alpha = {
@@ -38,7 +39,7 @@
       w = "w";
     };
   };
-  surround.enable = true;
+  vim-surround.enable = true;
   todo-comments.enable = true;
   toggleterm = {
     enable = true;
@@ -106,6 +107,7 @@
       };
       hls = {
         enable = true;
+        installGhc=false;
         package = null;
         cmd = [
           "haskell-language-server"
@@ -121,7 +123,8 @@
         };
       };
       nixd.enable = true;
-      typst-lsp.enable = true;
+      typst_lsp.enable = true;
+      idris2_lsp.enable = true;
     };
     keymaps.lspBuf = {
       "gd" = "definition";
