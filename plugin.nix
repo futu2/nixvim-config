@@ -17,7 +17,7 @@
   cursorline.enable = true;
   noice.enable = true;
   # notify.enable = true;
-  nvim-colorizer.enable = true;
+  colorizer.enable = true;
   # specs =
   #   {
   #     enable = true;
@@ -100,8 +100,17 @@
         settings = {
           plugins = {
             rope.enabled = true;
-            pylsp_mypy.enabled = true;
+            # pylsp_mypy.enabled = true;
             yapf.enabled = true;
+            black.enabled = true;
+            flake8.enabled = true;
+            isort.enabled = true;
+            jedi.enabled = true;
+            mccabe.enabled = true;
+            pycodestyle.enabled = true;
+            pydocstyle.enabled = true;
+            pyflakes.enabled = true;
+            pylint.enabled = true;
           };
         };
       };
