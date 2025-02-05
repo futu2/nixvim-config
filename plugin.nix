@@ -132,8 +132,9 @@
         };
       };
       nixd.enable = true;
-      typst_lsp.enable = true;
+      tinymist.enable = true;
       idris2_lsp.enable = true;
+      nickel_ls.enable = true;
     };
     keymaps.lspBuf = {
       "gd" = "definition";
