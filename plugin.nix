@@ -155,8 +155,8 @@
   lsp-format = {
     enable = true;
   };
-  lspkind.enable = true;
-  lspkind.cmp.enable = true;
+  # lspkind.enable = true;
+  # lspkind.cmp.enable = true;
   lspsaga.enable = true;
   lspsaga.lightbulb.enable = false;
   fidget.enable = true;
