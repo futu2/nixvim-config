@@ -48,17 +48,11 @@
   trouble.enable = true;
   which-key.enable = true;
   # wilder.enable = true;
-  telescope = {
+  fzf-lua = {
     enable = true;
     keymaps = {
-      # "<C-p>" = {
-      #   action = "git_files";
-      #   desc = "Telescope Git Files";
-      # };
-      # "<leader>/" = "live_grep";
-      "<leader>f" = "find_files";
-      # "<leader>m" = "man_pages";
-      # "gr" = "lsp_references";
+      "<leader>ff" = "files";
+      "<leader>fg" = "live_grep";
     };
   };
 
@@ -158,6 +152,9 @@
   # lspkind.enable = true;
   # lspkind.cmp.enable = true;
   lspsaga.enable = true;
-  lspsaga.lightbulb.enable = false;
+  lspsaga.settings.lightbulb.enable = false;
+
   fidget.enable = true;
+  godot.enable = true;
+  glance.enable = true;
 }
