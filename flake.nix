@@ -18,6 +18,9 @@
       nvim = nixvim'.makeNixvim config;
     in
     {
-      packages.default = nvim;
+      packages.default = nvim.overrideAttrs (oldAttrs: {
+        pname = "nixvim";
+        version = "0.1.0";
+      });
     });
 }

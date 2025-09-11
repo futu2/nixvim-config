@@ -157,4 +157,5 @@
   fidget.enable = true;
   godot.enable = true;
   glance.enable = true;
+  typescript-tools.enable = true;
 }
