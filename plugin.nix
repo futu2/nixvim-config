@@ -129,6 +129,7 @@
       tinymist.enable = true;
       idris2_lsp.enable = true;
       nickel_ls.enable = true;
+      zls.enable = true;
     };
     keymaps.lspBuf = {
       "gd" = "definition";
@@ -158,4 +159,5 @@
   godot.enable = true;
   glance.enable = true;
   typescript-tools.enable = true;
+  zig.enable = true;
 }
