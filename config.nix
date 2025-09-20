@@ -14,6 +14,12 @@
     shiftwidth = 2;
     expandtab = true;
   };
+  diagnostic.settings = {
+    virtual_lines = {
+      current_line = true;
+    };
+    virtual_text = false;
+  };
   # filetype.extension.typ = "typst";
   plugins = import ./plugin.nix;
   extraPlugins = [
